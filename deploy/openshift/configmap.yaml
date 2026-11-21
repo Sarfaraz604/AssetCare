@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: assetcare-config
+data:
+  DB_URL: "jdbc:postgresql://REPLACE_DATABASE_HOST:5432/assetcare?sslmode=verify-full"
+  DB_USERNAME: "REPLACE_DATABASE_USER"
+  COOKIE_SECURE: "true"
+  DEMO_SEED_ENABLED: "false"

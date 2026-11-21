@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: assetcare
+spec:
+  selector:
+    app: assetcare
+  ports:
+    - name: http
+      port: 8080
+      targetPort: http
